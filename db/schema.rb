@@ -11,14 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160131135224) do
+ActiveRecord::Schema.define(version: 20160131175530) do
+
+  create_table "buildings", force: :cascade do |t|
+    t.integer  "developer_id"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "buildings", ["developer_id"], name: "index_buildings_on_developer_id"
 
   create_table "developers", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.string   "logo_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "adress"
+    t.integer  "created_by"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

@@ -1,0 +1,26 @@
+<div class="row title">
+  <h1><%= @building.name %></h1>
+  <%= link_to 'Изменить', edit_building_path(@building), class: 'btn btn-primary' %>
+</div>
+
+<% if notice %>
+  <div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Внимание!</strong> <%= notice %>
+  </div>
+<% end %>
+
+<ol class="breadcrumb">
+  <li><%= link_to 'Назад', buildings_path %></li>
+</ol>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <p><%= @building.developer.name %></p>
+  </div>
+  <div class="col-md-6">
+    <%=raw @building.description %>
+  </div>
+</div>
+

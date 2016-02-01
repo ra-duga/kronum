@@ -1,0 +1,18 @@
+
+<div class="depot_form">
+ <% if flash[:alert] %>
+ <p id="notice"><%= flash[:alert] %></p>
+ <% end %>
+ <%= form_tag do %>
+ <div class="form-signin"</div>
+  <h2 class="form-signin-heading">Вход</h2>
+  <div class="input-group">
+  <span class="input-group-addon">@</span>
+ <%= text_field_tag :name, params[:name], class: 'form-control', placeholder: 'Email адрес' %>
+</div><br>
+ <%= password_field_tag :password, params[:password], class: 'form-control', placeholder: 'Пароль' %><br>
+ <%= submit_tag "Войти", class: 'btn btn-lg btn-primary btn-block' %>
+ </div>
+ <div>
+ <% end %>
+</div>

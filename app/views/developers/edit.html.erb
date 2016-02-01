@@ -1,6 +1,15 @@
-<h1>Editing Developer</h1>
+<div class="row title">
+  <h1><%= @developer.name %></h1>
+</div>
+<ol class="breadcrumb">
+  <li><%= link_to 'Назад', developers_path %></li>
+</ol>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @developer %> |
-<%= link_to 'Back', developers_path %>
+  <% if notice %>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Внимание!</strong> <%= notice %>
+    </div>
+  <% end %>
+  <%= render 'form' %>
+</table>

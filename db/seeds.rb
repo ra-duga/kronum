@@ -8,12 +8,26 @@
 Developer.delete_all
 
 Developer.create!(name: 'О2 Development',
-                  decription:
+                  description:
                   %{<p>Не самый надежный застройщик</p>},
-                  logo_url: 'test_logo.jpg')
+                  logo_url: 'test_logo.jpg',
+                  adress: '')
 
 Developer.create!(name: 'Ленспецсму',
-                  decription:
+                  description:
                   %{<p>Не самый надежный застройщик</p>},
-                  logo_url: 'test_logo.jpg')
+                  logo_url: 'test_logo.jpg',
+                  adress: '')
+
+Developer.create!(name: 'Setl City',
+                  description:
+                  %{<p>Девелоперская компания "SETL CITY" благодаря многолетнему опыту работы уже давно заняла лидирующие позиции в инвестиционно-строительном сегменте российского рынка. </p>},
+                  logo_url: 'test_logo.jpg',
+                  adress: 'Санкт-Петербург, Московский пр., 212.')
+
+Developer.create!(name: 'ЦДС',
+                  description:
+                  %{<p>Строительная компания "ЦДС" сегодня по праву считается одним из крупнейших застройщиков Санкт-Петербурга. За долгие годы работы застройщик успел пройти путь от небольшой строительной компании,... </p>},
+                  logo_url: 'test_logo.jpg',
+                  adress: 'Санкт-Петербург, пр. Добролюбова 8 А')
 

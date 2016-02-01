@@ -1,0 +1,15 @@
+<div class="row title">
+  <h1><%= @building.name %></h1>
+</div>
+<ol class="breadcrumb">
+  <li><%= link_to 'Назад', buildings_path %></li>
+</ol>
+
+  <% if notice %>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Внимание!</strong> <%= notice %>
+    </div>
+  <% end %>
+  <%= render 'form' %>
+</table>

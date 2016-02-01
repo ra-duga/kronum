@@ -10,6 +10,9 @@ class DevelopersController < ApplicationController
   # GET /developers/1
   # GET /developers/1.json
   def show
+    @developer = Developer.find(params[:id])
+    @user =User.find_by(id: @developer.created_by)
+    @buildings = Building.find_by(developer_id: params[:id])
   end
 
   # GET /developers/new
@@ -25,10 +28,10 @@ class DevelopersController < ApplicationController
   # POST /developers.json
   def create
     @developer = Developer.new(developer_params)
-
+    @developer.created_by = session[:user_id]
     respond_to do |format|
       if @developer.save
-        format.html { redirect_to @developer, notice: 'Developer was successfully created.' }
+        format.html { redirect_to @developer, notice: "Застройщик #{@developer.name} успешно добавлен" }
         format.json { render :show, status: :created, location: @developer }
       else
         format.html { render :new }
@@ -42,7 +45,7 @@ class DevelopersController < ApplicationController
   def update
     respond_to do |format|
       if @developer.update(developer_params)
-        format.html { redirect_to @developer, notice: 'Developer was successfully updated.' }
+        format.html { redirect_to @developer, notice: 'Застройщик #{@developer.name} успешно изменен.' }
         format.json { render :show, status: :ok, location: @developer }
       else
         format.html { render :edit }
@@ -56,7 +59,7 @@ class DevelopersController < ApplicationController
   def destroy
     @developer.destroy
     respond_to do |format|
-      format.html { redirect_to developers_url, notice: 'Developer was successfully destroyed.' }
+      format.html { redirect_to developers_url, notice: 'Застройщик #{@developer.name} успешно удален.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +72,6 @@ class DevelopersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def developer_params
-      params.require(:developer).permit(:name, :description, :logo_url)
+      params.require(:developer).permit(:name, :description, :logo_url, :adress, :avatar)
     end
 end

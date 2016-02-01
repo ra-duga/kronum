@@ -1,0 +1,32 @@
+<div class="row title">
+  <h1>Объекты</h1>
+  <%= link_to 'Добавить', new_building_path, class: 'btn btn-primary' %>
+</div>
+
+  <% if notice %>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Внимание!</strong> <%= notice %>
+    </div>
+  <% end %>
+
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Застройщик</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @buildings.each do |building| %>
+      <tr>
+        <td><%= link_to building.name, building %></td>
+        <td><%= building.developer.name %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>'), edit_building_path(building) %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-trash"></span>'), building, method: :delete, data: { confirm: 'Уверены что хотите удалить?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

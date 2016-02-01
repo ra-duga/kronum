@@ -1,19 +1,51 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @developer.name %>
-</p>
+<div class="row title">
+  <h1><%= @developer.name %></h1>
+  <%= link_to 'Изменить', edit_developer_path(@developer), class: 'btn btn-primary' %>
+</div>
+<% if notice %>
+  <div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Внимание!</strong> <%= notice %>
+  </div>
+<% end %>
+<ol class="breadcrumb">
+  <li><%= link_to 'Назад', developers_path %></li>
+</ol>
+<div class="row">
+  <div class="col-md-6">
+    <%= image_tag @developer.avatar.url %>
+    <p><%= @developer.adress %></p>
+  </div>
+  <div class="col-md-6">
+    <%=raw @developer.description %>
+    <%= @developer.created_by %>
+  </div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @developer.description %>
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Объекты застройщика</h2>
+  </div>
 
-<p>
-  <strong>Logo url:</strong>
-  <%= @developer.logo_url %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_developer_path(@developer) %> |
-<%= link_to 'Back', developers_path %>
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <% @developer.buildings.each do |building| %>
+      <tr>
+        <td><%= link_to building.name, building %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>'), edit_building_path(building) %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-trash"></span>'), building, method: :delete, data: { confirm: 'Уверены что хотите удалить?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

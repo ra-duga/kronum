@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-get 'admin' => 'admin#index'
+  resources :comissions
+  resources :agents
+  resources :users
+  resources :buildings
+  resources :developers
+
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
@@ -7,16 +12,11 @@ get 'admin' => 'admin#index'
   end
 
   root 'developers#index'
+
   get 'admin/index'
-
-
   get 'sessions/create'
-
   get 'sessions/destroy'
 
-  resources :users
-  resources :buildings
-  resources :developers
 
 
 

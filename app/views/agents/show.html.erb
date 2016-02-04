@@ -1,0 +1,28 @@
+<div class="row title">
+  <h1><%= @agent.name %></h1>
+  <%= link_to 'Изменить', edit_agent_path(@agent), class: 'btn btn-primary' %>
+</div>
+
+<% if notice %>
+  <div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Внимание!</strong> <%= notice %>
+  </div>
+<% end %>
+
+<ol class="breadcrumb">
+  <li><%= link_to 'Назад', agents_path %></li>
+</ol>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <p><strong>Юридическое лицо:</strong> <%= @agent.low_name %></p>
+    <p><strong>Почтовый адрес агента:</strong> <%= @agent.adress %></p>
+    <p><strong>Контактный телефон агента:</strong> <%= @agent.phone %></p>
+    <h3>Примечания</h3>
+    <%= raw @agent.comment %>
+  </div>
+  <div class="col-md-6">
+  </div>
+</div>

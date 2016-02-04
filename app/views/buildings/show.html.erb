@@ -23,4 +23,11 @@
     <%=raw @building.description %>
   </div>
 </div>
-
+<%= @building.comissions.count %>
+<% @building.comissions.each do |comission| %>
+  <%= comission.value %><br>
+  <%= comission.agent.name %>
+<%end%>
+<% @building.comissions.each do |comission| %>
+  <%= comission.value %>
+<%end%>

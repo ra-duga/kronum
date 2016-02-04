@@ -1,0 +1,37 @@
+<div class="row title">
+  <h1>Агенты</h1>
+  <%= link_to 'Добавить', new_agent_path, class: 'btn btn-primary' %>
+</div>
+
+  <% if notice %>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Внимание!</strong> <%= notice %>
+    </div>
+  <% end %>
+
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Юридическое лицо</th>
+      <th>Адрес</th>
+      <th>Телфон</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agents.each do |agent| %>
+      <tr>
+        <td><%= link_to agent.name, agent %></td>
+        <td><%= agent.low_name %></td>
+        <td><%= agent.adress %></td>
+        <td><%= agent.phone %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>'), edit_agent_path(agent) %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-trash"></span>'), agent, method: :delete, data: { confirm: 'Уверены что хотите удалить?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

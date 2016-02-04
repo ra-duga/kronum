@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Is episode:</strong>
+  <%= @comission.is_episode %>
+</p>
+
+<p>
+  <strong>Start epizode:</strong>
+  <%= @comission.start_epizode %>
+</p>
+
+<p>
+  <strong>End epizode:</strong>
+  <%= @comission.end_epizode %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @comission.value %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @comission.comment %>
+</p>
+
+<p>
+  <strong>Agents:</strong>
+  <%= @comission.agent.name %>
+</p>
+
+<p>
+  <strong>Buildings:</strong>
+  <%= @comission.building.name %>
+</p>
+
+<%= link_to 'Edit', edit_comission_path(@comission) %> |
+<%= link_to 'Back', comissions_path %>

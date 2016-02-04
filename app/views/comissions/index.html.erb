@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Comissions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Is episode</th>
+      <th>Start epizode</th>
+      <th>End epizode</th>
+      <th>Value</th>
+      <th>Comment</th>
+      <th>Agents</th>
+      <th>Buildings</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comissions.each do |comission| %>
+      <tr>
+        <td><%= comission.is_episode %></td>
+        <td><%= comission.start_epizode %></td>
+        <td><%= comission.end_epizode %></td>
+        <td><%= comission.value %></td>
+        <td><%= comission.comment %></td>
+        <td><%= comission.agent.name %></td>
+        <td><%= comission.building.name %></td>
+        <td><%= link_to 'Show', comission %></td>
+        <td><%= link_to 'Edit', edit_comission_path(comission) %></td>
+        <td><%= link_to 'Destroy', comission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Comission', new_comission_path %>

@@ -11,8 +11,6 @@ class DevelopersController < ApplicationController
   # GET /developers/1.json
   def show
     @developer = Developer.find(params[:id])
-    @user =User.find_by(id: @developer.created_by)
-    @buildings = Building.find_by(developer_id: params[:id])
   end
 
   # GET /developers/new

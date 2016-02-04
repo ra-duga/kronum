@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160131175530) do
+ActiveRecord::Schema.define(version: 20160201150807) do
+
+  create_table "agents", force: :cascade do |t|
+    t.string   "name"
+    t.string   "low_name"
+    t.string   "adress"
+    t.string   "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "comment"
+  end
 
   create_table "buildings", force: :cascade do |t|
     t.integer  "developer_id"
@@ -22,6 +32,21 @@ ActiveRecord::Schema.define(version: 20160131175530) do
   end
 
   add_index "buildings", ["developer_id"], name: "index_buildings_on_developer_id"
+
+  create_table "comissions", force: :cascade do |t|
+    t.boolean  "is_episode"
+    t.date     "start_epizode"
+    t.date     "end_epizode"
+    t.float    "value"
+    t.text     "comment"
+    t.integer  "agent_id"
+    t.integer  "building_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "comissions", ["agent_id"], name: "index_comissions_on_agent_id"
+  add_index "comissions", ["building_id"], name: "index_comissions_on_building_id"
 
   create_table "developers", force: :cascade do |t|
     t.string   "name"

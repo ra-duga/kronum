@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  is_episode: false
+  start_epizode: 2016-02-01
+  end_epizode: 2016-02-01
+  value: 9.99
+  comment: MyText
+  agents_id: 
+  buildings_id: 
+
+two:
+  is_episode: false
+  start_epizode: 2016-02-01
+  end_epizode: 2016-02-01
+  value: 9.99
+  comment: MyText
+  agents_id: 
+  buildings_id: 

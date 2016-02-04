@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails kronum: development" uuid="48348f86-98f7-4a7f-b2d2-f64624afb151">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails kronum: test" uuid="9d8bbc94-3cd0-4a9a-8382-7ea6eb054c2e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

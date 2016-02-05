@@ -59,14 +59,4 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
- server 'estate.kronum.ru',
-   user: 'deployer',
-   roles: %w{web app},
-   ssh_options: {
-     user: 'deployer', # overrides user setting above
-     keys: %w(/home/maksim/.ssh/id_rsa),
-     forward_agent: false,
-     auth_methods: %w(publickey password)
-     # password: 'Agm@pass2015'
-   }
 

@@ -33,6 +33,7 @@ gem 'cancancan', '~> 1.10'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'puma'
+gem 'pg'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -51,5 +52,9 @@ group :development do
     gem 'capistrano3-puma',   require: false
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+group :production do
+  gem 'pg'
+  gem 'puma'
 end
 

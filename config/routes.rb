@@ -1,22 +1,26 @@
 Rails.application.routes.draw do
+  devise_for :users
+  scope "/admin" do
+    resources :users
+  end
+
   resources :roles
   resources :comissions
   resources :agents
-  resources :users
   resources :buildings
   resources :developers
 
-  controller :sessions do
-    get 'login' => :new
-    post 'login' => :create
-    delete 'logout' => :destroy
-  end
+ # controller :sessions do
+  #  get 'login' => :new
+   # post 'login' => :create
+    #delete 'logout' => :destroy
+  #end
 
   root 'developers#index'
 
   get 'admin/index'
-  get 'sessions/create'
-  get 'sessions/destroy'
+  #get 'sessions/create'
+#  get 'sessions/destroy'
 
 
 

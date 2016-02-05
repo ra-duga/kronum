@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="853ae13b-7b95-4c52-af38-8423cf51b697" name="OD" url="http://178.62.74.201">
+        <fileTransfer host="178.62.74.201" port="22" rootFolder="/home/rails/rails_project" accessType="SFTP" password="dfebdfcddfc7dfeadfdadfcbdfd9dfd9df98df9adf9bdf9f" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

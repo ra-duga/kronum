@@ -1,0 +1,25 @@
+
+<div class="depot_form">
+ <% if flash[:alert] %>
+ <p id="notice"><%= flash[:alert] %></p>
+ <% end %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+ <div class="form-signin">
+  <h2 class="form-signin-heading">Вход</h2>
+  <div class="input-group">
+    <span class="input-group-addon">@</span>
+    <%= f.email_field :email,  class: 'form-control', placeholder: 'Email адрес' %>
+  </div>
+  <br>
+  <%= f.password_field :password,  class: 'form-control', placeholder: 'Пароль' %><br>
+  <% if devise_mapping.rememberable? -%>
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+  <% end -%>
+  <%= f.submit "Войти", class: 'btn btn-lg btn-primary btn-block' %>
+  </div>
+ <% end %>
+</div>
+
+
+<%= render "devise/shared/links" %>

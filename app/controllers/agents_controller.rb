@@ -61,14 +61,14 @@ class AgentsController < ApplicationController
     end
   end
 
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_agent
       @agent = Agent.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def agent_params
       params.require(:agent).permit(:name, :low_name, :adress, :phone, :comment)
     end
-end
+  end

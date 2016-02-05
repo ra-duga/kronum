@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails kronum: development" uuid="48348f86-98f7-4a7f-b2d2-f64624afb151">
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails kronum: test" uuid="9d8bbc94-3cd0-4a9a-8382-7ea6eb054c2e">
+      <auth-required>false</auth-required>
+    </data-source>
+  </component>
+</project>

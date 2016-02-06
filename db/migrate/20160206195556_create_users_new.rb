@@ -1,5 +1,5 @@
 
-class Createrole < ActiveRecord::Migration
+class CreateUsersNew < ActiveRecord::Migration
   def self.up
     drop_table (:users)
     create_table(:users) do |t|

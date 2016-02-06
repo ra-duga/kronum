@@ -21,7 +21,7 @@ production:
   database: kronum
   pool: 5
   username: rails
-  password: 19KLUNzad0
+  password: KSuwFQfO6l
 
 
 # Warning: The database defined as "test" will be erased and

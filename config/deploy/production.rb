@@ -1,3 +1,26 @@
+# Define roles, user and IP address of deployment server
+# role :name, %{[user]@[IP adde.]}
+role :app, %w{rails@162.243.104.249}
+role :web, %w{rails@162.243.104.249}
+role :db,  %w{rails@162.243.104.249}
+
+# Define server(s)
+server '162.243.104.249', user: 'rails', roles: %w{web}
+
+# SSH Options
+# See the example commented out section in the file
+# for more options.
+set :ssh_options, {
+    forward_agent: false,
+    auth_methods: %w(password),
+    password: 'user_deployers_password',
+    user: 'rails',
+}
+
+
+
+
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -20,11 +43,6 @@
 # role :app, %w{deploy@example.com}, my_property: :my_value
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
-role :app, %w{deployer@162.243.103.59}
-role :web, %w{deployer@162.243.103.59}
-role :db,  %w{deployer@162.243.103.59}
-
-
 # Configuration
 # =============
 # You can set any configuration variable like in config/deploy.rb
@@ -32,15 +50,6 @@ role :db,  %w{deployer@162.243.103.59}
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-
-server '162.243.46.159', user: 'rails', roles: %w{web}
-
-set :ssh_options, {
-    forward_agent: false,
-    auth_methods: %w(password),
-    password: 'user_deployers_password',
-    user: 'rails',
-}
 
 
 

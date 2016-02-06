@@ -20,8 +20,8 @@ production:
   encoding: utf8
   database: kronum
   pool: 5
-  username: kronum
-  password: Agm@pass2015
+  username: rails
+  password: 19KLUNzad0
 
 
 # Warning: The database defined as "test" will be erased and

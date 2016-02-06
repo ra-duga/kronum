@@ -20,7 +20,9 @@
 # role :app, %w{deploy@example.com}, my_property: :my_value
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
-
+role :app, %w{deployer@162.243.103.59}
+role :web, %w{deployer@162.243.103.59}
+role :db,  %w{deployer@162.243.103.59}
 
 
 # Configuration
@@ -30,6 +32,15 @@
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
+
+server '162.243.46.159', user: 'rails', roles: %w{web}
+
+set :ssh_options, {
+    forward_agent: false,
+    auth_methods: %w(password),
+    password: 'user_deployers_password',
+    user: 'rails',
+}
 
 
 

@@ -1,11 +1,9 @@
 # Change these
-server '178.62.74.201', port: 22, roles: [:web, :app, :db], primary: true
-
-
+server '192.241.248.146', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:ra-duga/kronum.git'
 set :application,     'kronum'
-set :user,            'deployer'
+set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 

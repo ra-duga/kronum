@@ -34,6 +34,7 @@ gem 'cancancan', '~> 1.10'
 # gem 'unicorn'
 gem 'puma'
 gem 'pg'
+gem 'unicorn'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

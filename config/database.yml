@@ -15,13 +15,9 @@ development:
 
 production:
   <<: *default
-  host: localhost
-  adapter: postgresql
-  encoding: utf8
-  database: kronum
-  pool: 5
+  database: kronum_production
   username: rails
-  password: KSuwFQfO6l
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
 
 
 # Warning: The database defined as "test" will be erased and

@@ -5,9 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Is episode</th>
-      <th>Start epizode</th>
-      <th>End epizode</th>
+      <th>set epizode</th>
       <th>Value</th>
       <th>Comment</th>
       <th>Agents</th>
@@ -19,9 +17,7 @@
   <tbody>
     <% @comissions.each do |comission| %>
       <tr>
-        <td><%= comission.is_episode %></td>
-        <td><%= comission.start_epizode %></td>
-        <td><%= comission.end_epizode %></td>
+        <td><%= comission.set_date %></td>
         <td><%= comission.value %></td>
         <td><%= comission.comment %></td>
         <td><%= comission.agent.name %></td>

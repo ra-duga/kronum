@@ -41,9 +41,11 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span> Администрирование <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <% if can? :read, @user %>
-                <%= nav_link 'Пользователи', users_path %>
+                  <%= nav_link 'Пользователи', users_path %>
                 <%end%>
-              </ul>
+                <% if can? :read, @role %>
+                  <%= nav_link 'Роли пользователей', roles_path %>
+                <%end%>              </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">

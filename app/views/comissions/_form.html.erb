@@ -11,20 +11,12 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= f.label :is_episode %><br>
-    <%= f.check_box :is_episode, id: 'toggle-event' %>
+    <%= f.label :set_date %><br>
+    <%= f.text_field :set_date, 'data-provide' => 'datepicker', class: 'datepicker' %>
   </div>
-<div id="console-event" class="collapse">
-  <div class="field">
-    <%= f.label :start_epizode %><br>
-    <%= f.text_field :start_epizode, 'data-provide' => 'datepicker', class: 'datepicker' %>
-  </div>
-  <div class="field">
-    <%= f.label :end_epizode %><br>
-    <%= f.text_field :end_epizode, 'data-provide' => 'datepicker', class: 'datepicker' %>
-  </div>
-</div>
+
   <div class="field">
     <%= f.label :value %><br>
     <%= f.text_field :value %>
@@ -54,21 +46,6 @@
         format: 'yyyy-mm-dd',
         startDate: '-3d'
     });
-
-    if ($('#toggle-event').prop('checked') == true){
-      $("#console-event").removeClass("collapse")
-    }
-
-    $(function() {
-    $('#toggle-event').change(function() {
-      if ($(this).prop('checked') == true){
-        $("#console-event").removeClass("collapse")
-      }else{
-        $("#console-event").addClass("collapse")
-
-      }
-    })
-  })
   })
 </script>
 

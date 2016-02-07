@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160206195556) do
+ActiveRecord::Schema.define(version: 20160207154632) do
 
   create_table "agents", force: :cascade do |t|
     t.string   "name"
@@ -34,15 +34,13 @@ ActiveRecord::Schema.define(version: 20160206195556) do
   add_index "buildings", ["developer_id"], name: "index_buildings_on_developer_id"
 
   create_table "comissions", force: :cascade do |t|
-    t.boolean  "is_episode"
-    t.date     "start_epizode"
-    t.date     "end_epizode"
     t.float    "value"
     t.text     "comment"
     t.integer  "agent_id"
     t.integer  "building_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.date     "set_date"
   end
 
   add_index "comissions", ["agent_id"], name: "index_comissions_on_agent_id"

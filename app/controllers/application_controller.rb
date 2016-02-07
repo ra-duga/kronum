@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
   before_filter :authenticate_user!
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
+  #Добавляем корневой пункт в хлебные крошки
+  add_breadcrumb "Главная", :root_path
+
   rescue_from CanCan::AccessDenied do |exception|
     flash[:error] = "Access denied!"
     redirect_to :back

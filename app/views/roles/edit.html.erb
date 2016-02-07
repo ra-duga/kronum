@@ -1,6 +1,16 @@
-<h1>Editing Role</h1>
+<div class="row title">
+  <h1><%= @role.description %></h1>
+</div>
+<ol class="breadcrumb">
+  <%= render_breadcrumbs :tag => :li, :separator => ""  %>
+</ol>
 
+<% if notice %>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Внимание!</strong> <%= notice %>
+    </div>
+<% end %>
 <%= render 'form' %>
 
-<%= link_to 'Show', @role %> |
-<%= link_to 'Back', roles_path %>
+

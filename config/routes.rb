@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   devise_for :users
   scope "/admin" do
     resources :users
+    resources :roles
   end
 
-  resources :roles
+
   resources :comissions
   resources :agents
   resources :buildings
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
     #delete 'logout' => :destroy
   #end
 
-  root 'developers#index'
+  root 'admin#index'
 
   get 'admin/index'
   #get 'sessions/create'

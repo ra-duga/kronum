@@ -9,6 +9,9 @@
       <strong>Внимание!</strong> <%= notice %>
     </div>
   <% end %>
+<ol class="breadcrumb">
+  <%= render_breadcrumbs :tag => :li, :separator => ""  %>
+</ol>
 
 <table class="table table-condensed table-striped">
   <thead>

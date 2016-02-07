@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
+  #Добавляем пункт в хлебные крошки
+  add_breadcrumb "Пользователи", :users_path
+
+
   # GET /users
   # GET /users.json
   def index
@@ -10,21 +15,23 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @joined_on = @user.created_at.to_formatted_s(:short)
-
     if @user.current_sign_in_at
       @last_login = @user.current_sign_in_at.to_formatted_s(:short)
     else
       @last_login = "никогда"
     end
+    add_breadcrumb @user.name, user_path
   end
 
   # GET /users/new
   def new
     @user = User.new
+    add_breadcrumb "Создание", new_user_path
   end
 
   # GET /users/1/edit
   def edit
+    add_breadcrumb "Редактирование #{@user.name} ", edit_user_path
   end
 
   # POST /users

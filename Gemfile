@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
+gem 'devise-i18n-views'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'paperclip'
@@ -30,6 +31,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-wysihtml5-rails'
 gem 'validates_timeliness', '~> 4.0'
 gem 'cancancan', '~> 1.10'
+gem "breadcrumbs_on_rails"
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'puma'

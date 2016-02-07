@@ -50,6 +50,7 @@ GEM
       sass (>= 3.3.4)
     bootstrap-wysihtml5-rails (0.3.3.7)
       railties (>= 3.0)
+    breadcrumbs_on_rails (2.3.1)
     builder (3.2.2)
     byebug (8.2.1)
     cancancan (1.13.1)
@@ -89,6 +90,7 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-i18n-views (0.3.7)
     erubis (2.7.0)
     execjs (2.6.0)
     globalid (0.3.6)
@@ -214,6 +216,7 @@ DEPENDENCIES
   bootstrap-datepicker-rails
   bootstrap-sass (~> 3.3.6)
   bootstrap-wysihtml5-rails
+  breadcrumbs_on_rails
   byebug
   cancancan (~> 1.10)
   capistrano
@@ -223,6 +226,7 @@ DEPENDENCIES
   capistrano3-puma
   coffee-rails (~> 4.1.0)
   devise
+  devise-i18n-views
   jbuilder (~> 2.0)
   jquery-rails
   paperclip

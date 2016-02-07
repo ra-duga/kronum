@@ -3,6 +3,9 @@ load_and_authorize_resource
 
   before_action :set_developer, only: [:show, :edit, :update, :destroy]
 
+  #Добавляем пункт в хлебные крошки
+  add_breadcrumb 'Застройщики', :developers_path
+
   # GET /developers
   # GET /developers.json
   def index
@@ -13,15 +16,18 @@ load_and_authorize_resource
   # GET /developers/1.json
   def show
     @developer = Developer.find(params[:id])
+    add_breadcrumb @developer.name, developer_path
   end
 
   # GET /developers/new
   def new
     @developer = Developer.new
+    add_breadcrumb 'Создание', new_developer_path
   end
 
   # GET /developers/1/edit
   def edit
+    add_breadcrumb "Редактирование #{@developer.name}", edit_developer_path
   end
 
   # POST /developers
@@ -45,7 +51,7 @@ load_and_authorize_resource
   def update
     respond_to do |format|
       if @developer.update(developer_params)
-        format.html { redirect_to @developer, notice: 'Застройщик #{@developer.name} успешно изменен.' }
+        format.html { redirect_to @developer, notice: "Застройщик #{@developer.name} успешно изменен." }
         format.json { render :show, status: :ok, location: @developer }
       else
         format.html { render :edit }
@@ -59,7 +65,7 @@ load_and_authorize_resource
   def destroy
     @developer.destroy
     respond_to do |format|
-      format.html { redirect_to developers_url, notice: 'Застройщик #{@developer.name} успешно удален.' }
+      format.html { redirect_to developers_url, notice: "Застройщик #{@developer.name} успешно удален." }
       format.json { head :no_content }
     end
   end

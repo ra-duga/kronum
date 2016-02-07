@@ -1,15 +1,17 @@
 <div class="row title">
   <h1><%= @developer.name %></h1>
 </div>
+
 <ol class="breadcrumb">
-  <li><%= link_to 'Назад', developers_path %></li>
+  <%= render_breadcrumbs :tag => :li, :separator => ""  %>
 </ol>
 
-  <% if notice %>
+<% if notice %>
     <div class="alert alert-info alert-dismissable">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <strong>Внимание!</strong> <%= notice %>
     </div>
-  <% end %>
-  <%= render 'form' %>
-</table>
+<% end %>
+
+<%= render 'form' %>
+

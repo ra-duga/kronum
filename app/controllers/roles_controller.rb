@@ -1,5 +1,6 @@
 class RolesController < ApplicationController
   before_action :set_role, only: [:show, :edit, :update, :destroy]
+  add_breadcrumb "Роли пользователей", :roles_path
 
   # GET /roles
   # GET /roles.json
@@ -15,16 +16,18 @@ class RolesController < ApplicationController
     else
       @assosciated_users = @role.users.map(&:name).join(", ")
     end
-
+    add_breadcrumb @role.name, role_path
   end
 
   # GET /roles/new
   def new
     @role = Role.new
+    add_breadcrumb "Создание", new_role_path
   end
 
   # GET /roles/1/edit
   def edit
+    add_breadcrumb "Редактирование #{@role.name} ", edit_role_path
   end
 
   # POST /roles

@@ -4,29 +4,6 @@ class Ability
   def initialize(user)
     # Define abilities for the passed in user here. For example:
     #
-       user ||= User.new # guest user (not logged in)
-       user.role.name == "Admin"
-        if user.admin?
-          can :manage, :all
-        elsif user.manager?
-          can :read, Agent
-          can :read, Comission
-          can :read, Agent
-          can :read, Building
-          can :read, Developer
-          #can :create, Agent
-          #can :update, Agent do |item|
-          #  item.try(:user) == user
-          #end
-          #can :destroy, Agent do |item|
-          #  item.try(:user) == user
-          #end
-        elsif user.topmanager?
-          can :manage, Comission
-          can :manage, Agent
-          can :manage, Building
-          can :manage, Developer
-        end
 
 
     #

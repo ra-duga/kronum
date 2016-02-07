@@ -12,7 +12,7 @@ set :deploy_to, "/home/rails/kronum"
 set :pty, true
 
 set :format, :pretty
-
+set :keep_releases, 5
 
 # Set the post-deployment instructions here.
 # Once the deployment is complete, Capistrano

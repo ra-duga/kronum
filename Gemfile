@@ -35,6 +35,7 @@ gem 'cancancan', '~> 1.10'
 gem 'puma'
 gem 'pg'
 gem 'unicorn'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 #gem 'pipeline'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

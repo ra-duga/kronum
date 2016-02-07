@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 # Use ActiveModel has_secure_password
- gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-wysihtml5-rails'
@@ -35,6 +35,7 @@ gem 'cancancan', '~> 1.10'
 gem 'puma'
 gem 'pg'
 gem 'unicorn'
+#gem 'pipeline'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

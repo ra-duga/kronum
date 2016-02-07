@@ -24,6 +24,5 @@ module Kronum
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.assets.digest = false
-    config.assets.paths ='app/assets'
   end
 end

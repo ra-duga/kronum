@@ -20,6 +20,13 @@ set :format, :pretty
 # To learn more about creating tasks,
 # check out:
 # http://capistranorb.com/
+desc "Report Uptimes"
+task :uptime do
+  on roles(:all) do |host|
+    execute :any_command, "with args", :here, "and here"
+    info "Host #{host} (#{host.roles.to_a.join(', ')}):\t#{capture(:uptime)}"
+  end
+end
 
 namespace :deploy do
   task :restart do
@@ -27,4 +34,3 @@ namespace :deploy do
   end
 end
 
- #end

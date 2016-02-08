@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="294ef7e4-f9be-413c-93f2-541f9341c741" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/buildings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/buildings_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/comissions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/comissions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comission.rb" afterPath="$PROJECT_DIR$/app/models/comission.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/developer.rb" afterPath="$PROJECT_DIR$/app/models/developer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/buildings/show.html.erb" afterPath="$PROJECT_DIR$/app/views/buildings/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comissions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/comissions/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comissions/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/comissions/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comissions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/comissions/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comissions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/comissions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comissions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/comissions/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-    </list>
+    <list default="true" id="294ef7e4-f9be-413c-93f2-541f9341c741" name="Default" comment="" />
     <ignored path="kronum.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />

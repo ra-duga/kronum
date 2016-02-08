@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  end_date_build: 2016-02-07
+  b_queues_id: 
+
+two:
+  name: MyString
+  description: MyText
+  end_date_build: 2016-02-07
+  b_queues_id: 

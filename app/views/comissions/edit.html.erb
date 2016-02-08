@@ -1,6 +1,14 @@
-<h1>Editing Comission</h1>
+<div class="row title">
+</div>
+<ol class="breadcrumb">
+  <li><%= link_to 'Назад', agents_path %></li>
+</ol>
 
+<% if notice %>
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Внимание!</strong> <%= notice %>
+    </div>
+<% end %>
 <%= render 'form' %>
-
-<%= link_to 'Show', @comission %> |
-<%= link_to 'Back', comissions_path %>
+</table>

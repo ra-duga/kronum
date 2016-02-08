@@ -1,6 +1,6 @@
 class Developer < ActiveRecord::Base
   has_many :buildings
-  validates :name, :description, :adress, presence: true
+  validates :name, :adress, presence: true
   has_attached_file :avatar,
                   :url  => "/assets/developers/:id.:extension",
                   :path => ":rails_root/app/assets/images/developers/:id.:extension"

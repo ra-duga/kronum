@@ -12,7 +12,7 @@ class BuildingsController < ApplicationController
   # GET /buildings/1
   # GET /buildings/1.json
   def show
-  end
+   end
 
   # GET /buildings/new
   def new

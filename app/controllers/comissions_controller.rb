@@ -70,6 +70,6 @@ load_and_authorize_resource
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comission_params
-      params.require(:comission).permit(:is_episode, :start_epizode, :end_epizode, :value, :comment, :agent_id, :building_id)
+      params.require(:comission).permit(:set_date, :value, :comment, :agent_id, :building_id)
     end
 end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :b_corpus
+  resources :b_queues
   devise_for :users
   scope "/admin" do
     resources :users

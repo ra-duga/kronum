@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing B Queues</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>End date build</th>
+      <th>Building</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @b_queues.each do |b_queue| %>
+      <tr>
+        <td><%= b_queue.name %></td>
+        <td><%= b_queue.description %></td>
+        <td><%= b_queue.end_date_build %></td>
+        <td><%= b_queue.building %></td>
+        <td><%= link_to 'Show', b_queue %></td>
+        <td><%= link_to 'Edit', edit_b_queue_path(b_queue) %></td>
+        <td><%= link_to 'Destroy', b_queue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New B queue', new_b_queue_path %>

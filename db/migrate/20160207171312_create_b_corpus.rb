@@ -4,7 +4,7 @@ class CreateBCorpus < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.date :end_date_build
-      t.belongs_to :b_queues, index: true, foreign_key: true
+      t.belongs_to :b_queue, index: true, foreign_key: true
 
       t.timestamps null: false
     end

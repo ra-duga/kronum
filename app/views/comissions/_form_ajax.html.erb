@@ -1,0 +1,49 @@
+
+<% if @comission.errors.any? %>
+    <% @comission.errors.full_messages.each do |message| %>
+        <div class="alert alert-danger alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <strong>Внимание!</strong> <%= message %>
+        </div>
+    <% end %>
+<% end %>
+
+<%= form_for(@comission, remote: true, :html => { :role => "form" }) do |f| %>
+
+    <div class="form-group">
+      <label for="name">Дата начала действия процента</label>
+      <%= f.text_field :set_date, class: 'form-control datepicker', id: 'set_date', 'data-provide' => 'datepicker', placeholder: 'Укажите дату, с которой начинает действовать комиссия' %>
+    </div>
+    <div class="form-group">
+      <label for="name">Процент комиссии </label>
+      <%= f.text_field :value, class: 'form-control', id: 'value', placeholder: 'Укажите размер комиссии' %>
+    </div>
+    <div class="form-group">
+      <label for="description">Агент (через кого проводим сделки)</label>
+      <%= f.collection_select(:agent_id, Agent.all, :id, :name,  {:prompt => 'Выберите агента...'}, {:class=>'form-control'}) %>
+    </div>
+    <div class="form-group">
+      <label for="description">Объект </label>
+      <%= f.collection_select(:building_id, Building.all, :id, :name,  {:prompt => 'Выберите объект...'}, {:class=>'form-control'}) %>
+    </div>
+    <div class="form-group">
+      <label for="name">Комментарий</label>
+      <%= f.text_area :comment, rows: 6, class: 'wysihtml5 form-control'%>
+    </div>
+
+    <%= f.submit  class: 'btn btn-default' %>
+<% end %>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker({
+        format: 'yyyy-mm-dd',
+        startDate: '-90d'
+    });
+    $('.wysihtml5').each(function(i, elem) {
+      $(elem).wysihtml5();
+    });
+
+  })
+</script>

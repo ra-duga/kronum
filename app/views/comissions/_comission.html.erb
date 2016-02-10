@@ -1,0 +1,7 @@
+<div id="comission-<%= comission.id %>" class="item_line">
+  Через <%=comission.agent.name %> (<%=comission.agent.low_name%>) - <%=comission.value%>% с <%=comission.set_date%>
+  <div class="editable">
+    <%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>'), edit_comission_path(comission, :building_id => @building_id), remote: true, :class => ''  %>
+    <%= link_to raw('<span class="glyphicon glyphicon-trash"></span>'), comission, remote: true, :method => :delete, data: {confirm: "Удалить #{comission.id}"}, :class => '' %>
+  </div>
+</div>

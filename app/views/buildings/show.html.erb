@@ -29,8 +29,25 @@
 <% @building.corpus.order(end_date_build: :desc).each do |corpu| %>
       <%= render corpu %>
 <%end%>
-  <%= link_to "Добавить корпус", new_corpu_path(:building_id => @building.id ), remote: true, class: "add_link" %>
+
 </div>
+<%= link_to "Добавить корпус", new_corpu_path(:building_id => @building.id ), remote: true, class: "add_link" %>
+
+
+
+
+
+
+<h2>Комиссионные вознаграждения</h2>
+
+<div id="comissions">
+  <% @building.comissions.order(set_date: :asc).each do |comission| %>
+      <%= render comission %>
+  <%end%>
+
+</div>
+<%= link_to "Добавить комиссию", new_comission_path(:building_id => @building.id ), remote: true, class: "add_link" %>
+
 
 <div class="modal fade"
      id="dialog" tabindex="-1" role="dialog"
@@ -53,11 +70,3 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-
-
-
-<h2>Комиссионные вознаграждения по застройщику</h2>
-<%
-  @building.comissions.order(set_date: :asc).each do |comission| %>
-    <p>Комиссия действует с <%=comission.set_date%>  – <%= comission.value %>% – <%= comission.agent.name %></p>
-<%end%>

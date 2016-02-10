@@ -22,6 +22,10 @@
       <%= f.date_select :end_date_build, class: ' form-control' %>
     </div>
     <div class="form-group">
+      <label for="name">Идентификатор ABC </label>
+      <%= f.text_field :abcid, class: 'form-control', id: 'abcid', placeholder: 'Укажите идентификатор корпуса в ситсеме АБЦ.Недвижмость' %>
+    </div>
+    <div class="form-group">
       <label for="description">Комментарий</label>
       <%= f.text_area :description, rows: 3, class: ' form-control'%>
     </div>

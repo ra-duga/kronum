@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160208211701) do
+ActiveRecord::Schema.define(version: 20160210203355) do
 
   create_table "agents", force: :cascade do |t|
     t.string   "name"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20160208211701) do
     t.integer  "building_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "abcid"
   end
 
   add_index "corpus", ["building_id"], name: "index_corpus_on_building_id"

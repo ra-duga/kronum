@@ -4,4 +4,6 @@
     <%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>'), edit_corpu_path(corpu, :building_id => @building_id), remote: true, :class => ''  %>
     <%= link_to raw('<span class="glyphicon glyphicon-trash"></span>'), corpu, remote: true, :method => :delete, data: {confirm: "Удалить #{corpu.name}"}, :class => '' %>
   </div>
+  <div class="dscription"><%= corpu.description %></div>
 </div>
+

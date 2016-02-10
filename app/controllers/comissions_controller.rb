@@ -29,8 +29,10 @@ load_and_authorize_resource
     @comission = Comission.new(comission_params)
     respond_to do |format|
       if @comission.save
+        format.json { head :no_content }
+        format.js
         format.html { redirect_to @comission, notice: 'Comission was successfully created.' }
-        format.json { render :show, status: :created, location: @comission }
+
       else
         format.html { render :new }
         format.json { render json: @comission.errors, status: :unprocessable_entity }
@@ -43,8 +45,9 @@ load_and_authorize_resource
   def update
     respond_to do |format|
       if @comission.update(comission_params)
+        format.json { head :no_content }
+        format.js
         format.html { redirect_to @comission, notice: 'Comission was successfully updated.' }
-        format.json { render :show, status: :ok, location: @comission }
       else
         format.html { render :edit }
         format.json { render json: @comission.errors, status: :unprocessable_entity }
@@ -57,8 +60,9 @@ load_and_authorize_resource
   def destroy
     @comission.destroy
     respond_to do |format|
-      format.html { redirect_to comissions_url, notice: 'Comission was successfully destroyed.' }
+      format.js
       format.json { head :no_content }
+      format.html { redirect_to comissions_url, notice: 'Comission was successfully destroyed.' }
     end
   end
 

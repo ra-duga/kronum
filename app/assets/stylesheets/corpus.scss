@@ -46,6 +46,14 @@
 
 
 }
+.item_line .dscription{
+  display:none;
+  left: 150px;
+  background-color: white;
+  font-style: italic;
+  padding: 0px;
+
+}
 .item_line:hover{
   text-decoration: #B00100;
 }
@@ -53,4 +61,7 @@
   display: block;
   background-color: white;
 
+}
+.item_line:hover .dscription{
+  display:block;
 }

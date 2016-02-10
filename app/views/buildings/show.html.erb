@@ -23,8 +23,41 @@
     <%=raw @building.description %>
   </div>
 </div>
+<h2>Корпуса</h2>
+
+<div id="corpusa">
+<% @building.corpus.order(end_date_build: :desc).each do |corpu| %>
+      <%= render corpu %>
+<%end%>
+  <%= link_to "Добавить корпус", new_corpu_path(:building_id => @building.id ), remote: true, class: "add_link" %>
+</div>
+
+<div class="modal fade"
+     id="dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true"
+     data-backdrop="static"
+     data-keyboard="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
 <h2>Комиссионные вознаграждения по застройщику</h2>
-<% @building.comissions.order(set_date: :desc)
+<%
   @building.comissions.order(set_date: :asc).each do |comission| %>
-    Комиссия действует с <%=comission.set_date%>  – <%= comission.value %>% – <%= comission.agent.name %><br>
+    <p>Комиссия действует с <%=comission.set_date%>  – <%= comission.value %>% – <%= comission.agent.name %></p>
 <%end%>

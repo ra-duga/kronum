@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :b_corpus
-  resources :b_queues
+
   devise_for :users
   scope "/admin" do
     resources :users
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
   resources :comissions
   resources :agents
   resources :buildings
+  resources :corpus
   resources :developers
 
  # controller :sessions do
@@ -18,7 +18,6 @@ Rails.application.routes.draw do
    # post 'login' => :create
     #delete 'logout' => :destroy
   #end
-
   root 'admin#index'
 
   get 'admin/index'

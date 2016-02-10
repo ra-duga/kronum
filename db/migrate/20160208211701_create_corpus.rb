@@ -1,6 +1,6 @@
-class CreateBQueues < ActiveRecord::Migration
+class CreateCorpus < ActiveRecord::Migration
   def change
-    create_table :b_queues do |t|
+    create_table :corpus do |t|
       t.string :name
       t.text :description
       t.date :end_date_build

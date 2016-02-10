@@ -1,0 +1,41 @@
+<%= form_for(@corpu, remote: true, :html => { :role => "form" }) do |f| %>
+    <div id="error_explanation" class="bg-danger text-danger">
+    </div>
+
+  <% if @corpu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@corpu.errors.count, "error") %> prohibited this corpu from being saved:</h2>
+
+      <ul>
+      <% @corpu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="form-group">
+      <label for="name">Название </label>
+      <%= f.text_field :name, class: 'form-control', id: 'value', placeholder: 'Укажите полное название корпуса (1 очередь, Корпус 2)' %>
+    </div>
+    <div class="form-group">
+      <label for="end_date_build">Дата сдачи корпуса</label>
+      <%= f.date_select :end_date_build, class: ' form-control' %>
+    </div>
+    <div class="form-group">
+      <label for="description">Комментарий</label>
+      <%= f.text_area :description, rows: 3, class: ' form-control'%>
+    </div>
+
+    <% if @corpu.new_record?%>
+        <input type="hidden" name="corpu[building_id]" value="<%= params['building_id']%>">
+
+   <% else %>
+        <%= f.hidden_field :building_id %>
+
+   <% end %>
+
+  <div class="actions">
+    <%= f.submit  @corpu.new_record? ? "Создать" : "Сохранить", :class => "btn btn-primary" %>
+
+  </div>
+<% end %>

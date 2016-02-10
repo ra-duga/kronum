@@ -12,7 +12,8 @@ class BuildingsController < ApplicationController
   # GET /buildings/1
   # GET /buildings/1.json
   def show
-   end
+    @corpu = Corpu.new
+  end
 
   # GET /buildings/new
   def new

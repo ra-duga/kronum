@@ -1,0 +1,56 @@
+// Place all the styles related to the Corpus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.add_link{
+  color: #337ab7;
+  text-decoration: none;
+  border-bottom: dashed 1px #337ab7;
+  cursor: pointer;
+  font-size: 100%;
+  margin-left: 30px;
+
+
+}
+.add_link:hover{
+  border-bottom: none;
+}
+
+.item_line{
+  margin:5px 0px;
+  padding: 4px 30px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+}
+.item_line .editable{
+  font-size: 80%;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  display: none;
+  padding: 6px;
+  background: #fff;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2)
+
+
+}
+.item_line:hover{
+  text-decoration: #B00100;
+}
+.item_line:hover .editable{
+  display: block;
+  background-color: white;
+
+}

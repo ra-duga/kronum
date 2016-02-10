@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207171312) do
+ActiveRecord::Schema.define(version: 20160208211701) do
 
   create_table "agents", force: :cascade do |t|
     t.string   "name"
@@ -22,28 +22,6 @@ ActiveRecord::Schema.define(version: 20160207171312) do
     t.datetime "updated_at", null: false
     t.text     "comment"
   end
-
-  create_table "b_corpus", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.date     "end_date_build"
-    t.integer  "b_queues_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
-  add_index "b_corpus", ["b_queues_id"], name: "index_b_corpus_on_b_queues_id"
-
-  create_table "b_queues", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.date     "end_date_build"
-    t.integer  "building_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
-  add_index "b_queues", ["building_id"], name: "index_b_queues_on_building_id"
 
   create_table "buildings", force: :cascade do |t|
     t.integer  "developer_id"
@@ -67,6 +45,17 @@ ActiveRecord::Schema.define(version: 20160207171312) do
 
   add_index "comissions", ["agent_id"], name: "index_comissions_on_agent_id"
   add_index "comissions", ["building_id"], name: "index_comissions_on_building_id"
+
+  create_table "corpus", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.date     "end_date_build"
+    t.integer  "building_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "corpus", ["building_id"], name: "index_corpus_on_building_id"
 
   create_table "developers", force: :cascade do |t|
     t.string   "name"

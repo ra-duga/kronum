@@ -7,4 +7,9 @@ module ApplicationHelper
     end
   end
 
+  #получаем квартал из даты
+  def get_quarter(d)
+    "#{d.month/4+1} квартал #{d.year}"
+  end
+
 end

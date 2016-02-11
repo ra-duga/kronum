@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :offers
   devise_for :users
   scope "/admin" do
     resources :users

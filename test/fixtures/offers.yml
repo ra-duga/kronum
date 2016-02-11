@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  text: MyText
+  start_date: 2016-02-11
+  and_date: 2016-02-11
+  corpus: 
+
+two:
+  title: MyString
+  text: MyText
+  start_date: 2016-02-11
+  and_date: 2016-02-11
+  corpus: 

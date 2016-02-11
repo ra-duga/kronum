@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210203355) do
+ActiveRecord::Schema.define(version: 20160211075735) do
 
   create_table "agents", force: :cascade do |t|
     t.string   "name"
@@ -58,6 +58,14 @@ ActiveRecord::Schema.define(version: 20160210203355) do
 
   add_index "corpus", ["building_id"], name: "index_corpus_on_building_id"
 
+  create_table "corpus_offers", id: false, force: :cascade do |t|
+    t.integer "offers_id"
+    t.integer "corpus_id"
+  end
+
+  add_index "corpus_offers", ["corpus_id"], name: "index_corpus_offers_on_corpus_id"
+  add_index "corpus_offers", ["offers_id"], name: "index_corpus_offers_on_offers_id"
+
   create_table "developers", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -70,6 +78,15 @@ ActiveRecord::Schema.define(version: 20160210203355) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.date     "start_date"
+    t.date     "and_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "roles", force: :cascade do |t|

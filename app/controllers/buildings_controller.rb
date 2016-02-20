@@ -2,6 +2,8 @@ class BuildingsController < ApplicationController
  load_and_authorize_resource
 
   before_action :set_building, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
+  add_breadcrumb 'Объекты', :buildings_path
 
   # GET /buildings
   # GET /buildings.json
@@ -13,17 +15,24 @@ class BuildingsController < ApplicationController
   # GET /buildings/1.json
   def show
     @corpu = Corpu.new
+
+    add_breadcrumb @building.name, building_path
+    @title = @building.name
   end
 
   # GET /buildings/new
   def new
     @building = Building.new
     @developers = Developer.all
+    @title = 'Создание объекта'
   end
 
   # GET /buildings/1/edit
   def edit
     @developers = Developer.all.order(name: :asc)
+    @title = @building.name
+    add_breadcrumb "Редактирование #{@building.name}", edit_building_path
+
   end
 
   # POST /buildings
@@ -66,6 +75,9 @@ class BuildingsController < ApplicationController
     end
   end
 
+ def set_title
+   @title = 'Объекты'
+ end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_building

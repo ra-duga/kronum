@@ -2,6 +2,7 @@ class DevelopersController < ApplicationController
 load_and_authorize_resource
 
   before_action :set_developer, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
 
   #Добавляем пункт в хлебные крошки
   add_breadcrumb 'Застройщики', :developers_path
@@ -16,25 +17,31 @@ load_and_authorize_resource
   # GET /developers/1.json
   def show
     @developer = Developer.find(params[:id])
+
     add_breadcrumb @developer.name, developer_path
+    @title = @developer.name
   end
 
   # GET /developers/new
   def new
     @developer = Developer.new
     add_breadcrumb 'Создание', new_developer_path
+    @title = 'Создание застройщика'
+
   end
 
   # GET /developers/1/edit
   def edit
     add_breadcrumb "Редактирование #{@developer.name}", edit_developer_path
+    @title = @developer.name
+
   end
 
   # POST /developers
   # POST /developers.json
   def create
     @developer = Developer.new(developer_params)
-    @developer.created_by = session[:user_id]
+    @developer.created_by = current_user.id
     respond_to do |format|
       if @developer.save
         format.html { redirect_to @developer, notice: "Застройщик #{@developer.name} успешно добавлен" }
@@ -68,6 +75,10 @@ load_and_authorize_resource
       format.html { redirect_to developers_url, notice: "Застройщик #{@developer.name} успешно удален." }
       format.json { head :no_content }
     end
+  end
+  def set_title
+    @title = "Застройщики"
+
   end
 
   private

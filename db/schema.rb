@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210203355) do
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160220122108) do
+=======
+ActiveRecord::Schema.define(version: 20160211075735) do
+>>>>>>> CreateOffers
 
   create_table "agents", force: :cascade do |t|
     t.string   "name"
@@ -58,6 +62,23 @@ ActiveRecord::Schema.define(version: 20160210203355) do
 
   add_index "corpus", ["building_id"], name: "index_corpus_on_building_id"
 
+  create_table "corpus_offers", id: false, force: :cascade do |t|
+<<<<<<< HEAD
+    t.integer "corpu_id", null: false
+    t.integer "offer_id", null: false
+  end
+
+  add_index "corpus_offers", ["corpu_id", "offer_id"], name: "index_corpus_offers_on_corpu_id_and_offer_id"
+  add_index "corpus_offers", ["offer_id", "corpu_id"], name: "index_corpus_offers_on_offer_id_and_corpu_id"
+=======
+    t.integer "offers_id"
+    t.integer "corpus_id"
+  end
+
+  add_index "corpus_offers", ["corpus_id"], name: "index_corpus_offers_on_corpus_id"
+  add_index "corpus_offers", ["offers_id"], name: "index_corpus_offers_on_offers_id"
+>>>>>>> CreateOffers
+
   create_table "developers", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -72,6 +93,38 @@ ActiveRecord::Schema.define(version: 20160210203355) do
     t.datetime "avatar_updated_at"
   end
 
+<<<<<<< HEAD
+  create_table "offer_categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.string   "name"
+    t.text     "text"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "user_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "offer_categories_id"
+  end
+
+  add_index "offers", ["offer_categories_id"], name: "index_offers_on_offer_categories_id"
+  add_index "offers", ["user_id"], name: "index_offers_on_user_id"
+
+=======
+  create_table "offers", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.date     "start_date"
+    t.date     "and_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> CreateOffers
   create_table "roles", force: :cascade do |t|
     t.string   "name",        default: "", null: false
     t.string   "description", default: "", null: false

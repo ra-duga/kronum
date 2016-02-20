@@ -6,8 +6,8 @@ class User < ActiveRecord::Base
   validates :name,  presence: true, uniqueness: true
   validates :role, presence: true
 
-  belongs_to :role
-
+  belongs_to   :role
+  has_many     :offers
 
   def admin?
     self.role.name == "Admin"

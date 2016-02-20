@@ -1,0 +1,93 @@
+<%= form_for(@offer) do |f| %>
+  <% if @offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+      <% @offer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<<<<<<< HEAD
+    <div class="form-group">
+      <label for="name">Заголовок</label>
+      <%= f.text_field :name, class: 'form-control', placeholder: 'Заголовок акции' %>
+    </div>
+    <div class="form-group">
+      <label for="name">Текст</label>
+      <%= f.trix_editor :text, rows: 6, class: '' %>
+    </div>
+
+
+    <div class="form-group">
+      <label for="name">Дата начала действия</label>
+      <%= f.date_select :start_date %>
+    </div>
+    <div class="form-group">
+      <label for="name">Дата окончания действия</label>
+      <%= f.date_select :end_date %>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Корпуса</label>
+      <%= hidden_field_tag("offer[corpu_ids][]", nil) %>
+      <ul>
+      <% Developer.all_by_corpus.each do |developer| %>
+      <li><strong><%= developer.name %></strong></li>
+      <ul>
+        <% developer.buildings.each do |building| %>
+          <li><i><%= building.name%></i></li>
+            <ul>
+              <% building.corpus.each do |corpu| %>
+                <li><small><%= check_box_tag("offer[corpu_ids][]", corpu.id, corpu.id.in?(@offer.corpus.collect(&:id)), class: '-control') %> <%= corpu.name %></small></li>
+              <%end%>
+            </ul>
+        <%end%>
+        </ul>
+      <% end %>
+      </ul>
+    </div>
+  <div class="actions">
+    <%= f.submit class: 'btn btn-default'  %>
+  </div>
+<% end %>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker({
+      format: 'yyyy-mm-dd',
+      startDate: '-90d'
+    });
+
+  })
+</script>
+
+
+=======
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :and_date %><br>
+    <%= f.date_select :and_date %>
+  </div>
+  <div class="field">
+    <%= f.label :corpus %><br>
+    <%= f.text_field :corpus %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+>>>>>>> CreateOffers

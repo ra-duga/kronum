@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+
+
+
+    <% @offers.each do |offer| %>
+        <div class="row">
+        <article class="offer_card col-md-12">
+          <h1><%= offer.name %></h1>
+          <span class="date">Акция действует с <strong><%= l offer.start_date, format: :long %></strong> по <strong><%= l offer.end_date, format: :long %></strong></span>
+
+          <%= raw(offer.text) %>
+         <% offer.corpus.each do |corpu| %>
+          <p><%=corpu.building.name %> - <%=corpu.building.name %></p>
+
+        <% end %>
+
+
+       Создано <%= l offer.created_at, format: :short %><br>
+=======
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Offers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Start date</th>
+      <th>And date</th>
+      <th>Corpus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offers.each do |offer| %>
+      <tr>
+        <td><%= offer.title %></td>
+        <td><%= offer.text %></td>
+        <td><%= offer.start_date %></td>
+        <td><%= offer.and_date %></td>
+        <td><%= offer.corpus %></td>
+>>>>>>> CreateOffers
+        <td><%= link_to 'Show', offer %></td>
+        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+<<<<<<< HEAD
+        </article>
+        </div>
+
+    <% end %>
+=======
+    <% end %>
+  </tbody>
+</table>
+
+>>>>>>> CreateOffers
+<br>
+
+<%= link_to 'New Offer', new_offer_path %>

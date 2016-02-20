@@ -1,3 +1,3 @@
 class Agent < ActiveRecord::Base
-  has_many :comissions
+  has_many :comissions, dependent: :destroy
 end

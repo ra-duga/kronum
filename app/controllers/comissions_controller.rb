@@ -2,6 +2,8 @@ class ComissionsController < ApplicationController
 load_and_authorize_resource
 
   before_action :set_comission, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
+  add_breadcrumb 'Комиссионные вознаграждения', :comissions_path
 
   # GET /comissions
   # GET /comissions.json
@@ -12,15 +14,20 @@ load_and_authorize_resource
   # GET /comissions/1
   # GET /comissions/1.json
   def show
+    add_breadcrumb "#{@comission.agent.name} – #{@comission.building.name}", comission_path
+    @title = "#{@comission.agent.name} – #{@comission.building.name}"
   end
 
   # GET /comissions/new
   def new
     @comission = Comission.new
+    @title = 'Создание коммиссии'
   end
 
   # GET /comissions/1/edit
   def edit
+    add_breadcrumb "Редактирование #{@comission.agent.name} – #{@comission.building.name}", edit_comission_path
+    @title = "#{@comission.agent.name} – #{@comission.building.name}"
   end
 
   # POST /comissions
@@ -65,12 +72,16 @@ load_and_authorize_resource
       format.html { redirect_to comissions_url, notice: 'Comission was successfully destroyed.' }
     end
   end
-
+  def set_title
+    @title = 'Комиссионные вознаграждения'
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_comission
       @comission = Comission.find(params[:id])
     end
+
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comission_params

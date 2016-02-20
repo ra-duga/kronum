@@ -41,7 +41,8 @@ ru:
     formats:
       default: "%d.%m.%Y"
       long: "%-d %B %Y"
-      short: "%-d %b"
+      short: "%-d "
+
     month_names:
     -
     - января

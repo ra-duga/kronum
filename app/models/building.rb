@@ -1,6 +1,7 @@
 class Building < ActiveRecord::Base
   belongs_to :developer
-  has_many :comissions
-  has_many :agents, through: :comissions
-  has_many :corpus
+  has_many :comissions, dependent: :destroy
+  has_many :agents, through: :comissions, dependent: :destroy
+  has_many :corpus, dependent: :destroy
+
 end

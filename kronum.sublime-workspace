@@ -1,0 +1,602 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"C",
+				"Comission"
+			],
+			[
+				"com",
+				"comission"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"m",
+				"min-height"
+			],
+			[
+				"develo",
+				"developer"
+			],
+			[
+				"crea",
+				"created_by"
+			],
+			[
+				"deve",
+				"developer"
+			],
+			[
+				"Arc",
+				"Article"
+			],
+			[
+				"Ar",
+				"Article"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"bef",
+				"before"
+			],
+			[
+				"su",
+				"subject	subject(:subject) { described_class.new }"
+			],
+			[
+				"li",
+				"link_to"
+			],
+			[
+				"link_",
+				"stylesheet_link_tag"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"сож",
+				"содеражать"
+			],
+			[
+				"p",
+				"page_title"
+			],
+			[
+				"co",
+				"contact"
+			],
+			[
+				"pa",
+				"page"
+			],
+			[
+				"h",
+				"home"
+			],
+			[
+				"st",
+				"static_page"
+			],
+			[
+				"H",
+				"Home"
+			],
+			[
+				"Abo",
+				"About"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/maksim/micro_crm/Gemfile",
+			"settings":
+			{
+				"buffer_size": 372,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"selected_items":
+		[
+			[
+				"rsp",
+				"Set Syntax: RSpec"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Git: Commit"
+			],
+			[
+				"GIT add",
+				"Git: Add..."
+			],
+			[
+				"git add.",
+				"Git: Add..."
+			],
+			[
+				"PA",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"op",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/maksim/kronum/config/database.yml",
+		"/Users/maksim/kronum/app/views/layouts/application.html.erb",
+		"/Users/maksim/kronum/config/routes.rb",
+		"/Users/maksim/kronum/app/controllers/application_controller.rb",
+		"/Users/maksim/kronum/app/models/ability.rb",
+		"/Users/maksim/kronum/config/locales/models/ru.yml",
+		"/Users/maksim/kronum/config/locales/ru.yml",
+		"/Users/maksim/.Trash/devise.en.yml",
+		"/Users/maksim/kronum/config/locales/devise.ru.yml",
+		"/Users/maksim/kronum/config/locales/devise.views.ru.yml",
+		"/Users/maksim/kronum/app/views/devise/sessions/new.html.erb",
+		"/Users/maksim/kronum/Gemfile",
+		"/Users/maksim/kronum/app/controllers/developers_controller.rb",
+		"/Users/maksim/kronum/app/views/developers/index.html.erb",
+		"/Users/maksim/kronum/app/views/developers/show.html.erb",
+		"/Users/maksim/kronum/config/environment.rb",
+		"/Users/maksim/kronum/config/deploy.rb",
+		"/Users/maksim/kronum/Capfile",
+		"/Users/maksim/kronum/config/application.rb",
+		"/Users/maksim/kronum/config/environments/production.rb",
+		"/Users/maksim/kronum/config/deploy/production.rb",
+		"/Users/maksim/kronum/app/views/admin/index.html.erb",
+		"/Users/maksim/kronum/db/migrate/20160206194033_createrole.rb",
+		"/Users/maksim/kronum/db/migrate/20160204100728_add_devise_to_users.rb",
+		"/Users/maksim/kronum/db/migrate/20160206195427_create_users.rb",
+		"/Users/maksim/kronum/db/migrate/20160206195433_create_roles.rb",
+		"/Users/maksim/kronum/db/migrate/20160206195552_create_roles_new.rb",
+		"/Users/maksim/kronum/db/migrate/20160206195556_create_users_new.rb",
+		"/Users/maksim/kronum/config/nginx.conf",
+		"/Users/maksim/kronum/config/puma.rb",
+		"/Users/maksim/kronum/app/views/devise/sessions/ols.new.html.erb",
+		"/Users/maksim/kronum/config/initializers/devise.rb",
+		"/Users/maksim/kronum/config/secrets.yml",
+		"/Users/maksim/kronum/development\n;\n",
+		"/Users/maksim/kronum/app/views/users/_form.html.erb",
+		"/Users/maksim/kronum/app/controllers/users_controller.rb",
+		"/Users/maksim/kronum/app/views/users/show.html.erb",
+		"/Users/maksim/kronum/app/models/user.rb",
+		"/Users/maksim/kronum/app/controllers/buildings_controller.rb",
+		"/Users/maksim/kronum/app/controllers/comissions_controller.rb",
+		"/Users/maksim/kronum/app/views/roles/show.html.erb",
+		"/Users/maksim/kronum/app/controllers/roles_controller.rb",
+		"/Users/maksim/kronum/app/views/devise/registrations/new.html.erb",
+		"/Users/maksim/kronum/app/views/devise/registrations/edit.html.erb",
+		"/Users/maksim/kronum/app/models/role.rb",
+		"/Users/maksim/kronum/db/migrate/20160204155128_add_role_collumn_to_user.rb",
+		"/Users/maksim/kronum/db/migrate/20160204073413_add_comment_to_user.rb",
+		"/Users/maksim/kronum/db/migrate/20160204074240_add_collumn_to_user.rb",
+		"/Users/maksim/kronum/db/migrate/20160204092836_add_role2.rb",
+		"/Users/maksim/kronum/db/migrate/20160204074122_add_role.rb",
+		"/Users/maksim/kronum/config/environments/development.rb",
+		"/Users/maksim/kronum/config/initializers/assets.rb",
+		"/Users/maksim/kronum/db/migrate/20160204100138_add_foreginey_to_users.rb",
+		"/Users/maksim/kronum/db/migrate/20160204131932_add_name_column_to_users.rb",
+		"/Users/maksim/kronum/app/helpers/sessions_helper.rb",
+		"/Users/maksim/kronum/app/models/agent.rb",
+		"/Users/maksim/kronum/app/views/comissions/show.html.erb",
+		"/Users/maksim/kronum/app/views/buildings/show.html.erb",
+		"/Users/maksim/kronum/db/migrate/20160201150807_create_comissions.rb",
+		"/Users/maksim/kronum/app/views/buildings/_form.html.erb",
+		"/Users/maksim/kronum/app/assets/stylesheets/application.css",
+		"/Users/maksim/kronum/app/assets/javascripts/application.js",
+		"/Users/maksim/kronum/app/models/building.rb",
+		"/Users/maksim/kronum/app/views/comissions/_form.html.erb",
+		"/Users/maksim/kronum/app/views/comissions/index.html.erb",
+		"/Users/maksim/kronum/app/models/comission.rb",
+		"/Users/maksim/kronum/app/views/agents/show.html.erb",
+		"/Users/maksim/kronum/app/views/agents/new.html.erb",
+		"/Users/maksim/kronum/app/views/agents/index.html.erb",
+		"/Users/maksim/kronum/app/views/agents/edit.html.erb",
+		"/Users/maksim/kronum/app/views/agents/_form.html.erb",
+		"/Users/maksim/kronum/app/assets/javascripts/agents.coffee",
+		"/Users/maksim/kronum/db/migrate/20160201141028_add_comment_to_agents.rb",
+		"/Users/maksim/kronum/app/controllers/agents_controller.rb",
+		"/Users/maksim/kronum/app/views/developers/edit.html.erb",
+		"/Users/maksim/kronum/app/views/buildings/edit.html.erb",
+		"/Users/maksim/kronum/app/views/buildings/index.html.erb",
+		"/Users/maksim/kronum/app/views/buildings/new.html.erb",
+		"/Users/maksim/kronum/app/views/sessions/new.html.erb",
+		"/Users/maksim/kronum/app/assets/stylesheets/custom.css.scss",
+		"/Users/maksim/kronum/app/assets/stylesheets/scaffolds.scss",
+		"/Users/maksim/kronum/app/views/developers/_form.html.erb",
+		"/Users/maksim/kronum/app/views/developers/new.html.erb",
+		"/Users/maksim/Desktop/logo-kronum.svg",
+		"/Users/maksim/kronum/db/migrate/20160131163844_add_created_by_to_developers.rb",
+		"/Users/maksim/kronum/app/controllers/admin_controller.rb",
+		"/Users/maksim/kronum/app/controllers/sessions_controller.rb",
+		"/Users/maksim/kronum/app/helpers/application_helper.rb",
+		"/Users/maksim/kronum/db/migrate/20160131175530_add_logo_columns_to_developer.rb",
+		"/Users/maksim/kronum/app/models/developer.rb",
+		"/Users/maksim/kronum/app/assets/images/developers/4/logo.png",
+		"/Users/maksim/kronum/app/helpers/admin_helper.rb",
+		"/Users/maksim/kronum/app/views/users/index.html.erb",
+		"/Users/maksim/kronum/db/migrate/20160131143502_add_adress_to_deeloper.rb",
+		"/Users/maksim/kronum/db/seeds.rb",
+		"/Users/maksim/kronum/db/migrate/20160131151746_create_biildings.rb",
+		"/Users/maksim/kronum/app/views/test/index.html.erb",
+		"/Users/maksim/kronum/app/views/articles/new.html.erb",
+		"/Users/maksim/kronum/app/views/articles/edit.html.erb",
+		"/Users/maksim/kronum/app/views/articles/_form.html.erb",
+		"/Users/maksim/kronum/app/controllers/articles_controller.rb",
+		"/Users/maksim/kronum/app/views/articles/index.html.erb",
+		"/Users/maksim/kronum/app/models/article.rb",
+		"/Users/maksim/kronum/app/assets/stylesheets/application.css.scss",
+		"/Users/maksim/kronum/app/controllers/comments_controller.rb",
+		"/Users/maksim/kronum/app/views/articles/show.html.erb",
+		"/Users/maksim/ror_prj/efin/app/views/property_developers/show.html.erb",
+		"/Users/maksim/ror_prj/efin/app/controllers/property_developers_controller.rb",
+		"/Users/maksim/ror_prj/efin/db/migrate/20151130113025_create_property_developers.rb",
+		"/Users/maksim/ror_prj/efin/Gemfile",
+		"/Users/maksim/ror_prj/efin/config/routes.rb",
+		"/Users/maksim/Desktop/feed2.xml",
+		"/Users/maksim/ror_prj/efin/.gitignore",
+		"/Users/maksim/ror_prj/sample_app/Gemfile",
+		"/Users/maksim/ror_prj/sample_app/simple.sublime-project",
+		"/Users/maksim/ror_prj/sample_app/app/views/layouts/application.html.erb",
+		"/Users/maksim/ror_prj/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/maksim/ror_prj/sample_app/app/views/shared/_error_messages.html.erb",
+		"/Users/maksim/ror_prj/sample_app/app/views/users/new.html.erb",
+		"/Users/maksim/ror_prj/sample_app/app/models/user.rb",
+		"/Users/maksim/ror_prj/sample_app/app/controllers/users_controller.rb",
+		"/Users/maksim/ror_prj/sample_app/app/helpers/users_helper.rb",
+		"/Users/maksim/ror_prj/sample_app/app/views/users/show.html.erb",
+		"/Users/maksim/ror_prj/sample_app/spec/factories.rb",
+		"/Users/maksim/ror_prj/sample_app/spec/requests/user_pages_spec.rb",
+		"/Users/maksim/ror_prj/sample_app/config/environments/test.rb",
+		"/Users/maksim/ror_prj/sample_app/config/routes.rb",
+		"/Users/maksim/ror_prj/sample_app/spec/models/user_spec.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pipeline",
+			"создать",
+			"guard",
+			"git",
+			"\n",
+			"erwrewer",
+			"subl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/maksim/micro_crm/Gemfile",
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.git":
+	{
+		"height": 28.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"gi",
+				".gitignore"
+			],
+			[
+				"user",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"ap",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"cus",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"new",
+				"app/views/users/new.html.erb"
+			],
+			[
+				"use",
+				"app/models/user.rb"
+			],
+			[
+				"usershe",
+				"app/helpers/users_helper.rb"
+			],
+			[
+				"users",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"test",
+				"config/environments/test.rb"
+			],
+			[
+				"sho",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"usersp",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"con",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"cust",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"appllo",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"u",
+				"app/models/user.rb"
+			],
+			[
+				"us",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"add",
+				"db/migrate/20151128085936_add_index_to_users_email.rb"
+			],
+			[
+				"specuse",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"mig",
+				"db/migrate/20151128074324_create_users.rb"
+			],
+			[
+				"ho",
+				"app/views/static_page/home.html.erb"
+			],
+			[
+				"stat",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"hea",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"foo",
+				"app/views/layouts/_footer.html.erb"
+			],
+			[
+				"rs",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"home",
+				"app/views/static_page/home.html.erb"
+			],
+			[
+				"contr",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"hrl",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"apl",
+				"config/application.rb"
+			],
+			[
+				"aphel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"applch",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"ab",
+				"app/views/static_page/about.html.erb"
+			],
+			[
+				"he",
+				"app/views/static_page/help.html.erb"
+			],
+			[
+				"hom",
+				"app/views/static_page/home.html.erb"
+			],
+			[
+				"h",
+				"app/views/static_page/home.html.erb"
+			],
+			[
+				"app/con",
+				"app/controllers/static_page_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 476.0,
+	"status_bar_visible": true
+}

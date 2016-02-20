@@ -1,22 +1,28 @@
 class CorpusController < ApplicationController
   before_action :set_corpu, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
+  add_breadcrumb 'Корпуса', :corpus_path
+
+  has_scope :by_offer, :all_by_corpus
 
   # GET /corpus
   # GET /corpus.json
   def index
-    @corpus = Corpu.all
+    @corpus = apply_scopes(Corpu).paginate(:per_page => 3, :page => 1)
   end
 
   # GET /corpus/1
   # GET /corpus/1.json
   def show
+    add_breadcrumb @corpu.name, corpu_path
+    @title = @corpu.name
   end
 
 
   # GET /corpus/new
   def new
     @corpu = Corpu.new
-
+    @title = 'Создание корупса'
   end
 
   # GET /corpus/1/edit
@@ -62,6 +68,9 @@ class CorpusController < ApplicationController
     end
   end
 
+  def set_title
+    @title = 'Корпусы'
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_corpu

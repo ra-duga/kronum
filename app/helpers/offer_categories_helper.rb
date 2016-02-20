@@ -1,0 +1,2 @@
+module OfferCategoriesHelper
+end

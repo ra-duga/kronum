@@ -10,6 +10,7 @@
       </ul>
     </div>
   <% end %>
+<<<<<<< HEAD
     <div class="form-group">
       <label for="name">Заголовок</label>
       <%= f.text_field :name, class: 'form-control', placeholder: 'Заголовок акции' %>
@@ -63,3 +64,30 @@
 </script>
 
 
+=======
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :and_date %><br>
+    <%= f.date_select :and_date %>
+  </div>
+  <div class="field">
+    <%= f.label :corpus %><br>
+    <%= f.text_field :corpus %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+>>>>>>> CreateOffers

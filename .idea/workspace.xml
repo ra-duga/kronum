@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="294ef7e4-f9be-413c-93f2-541f9341c741" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom_public.css.scss" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/public.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/buildings/_building.html.erb" />
@@ -56,6 +57,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/ru.yml" afterPath="$PROJECT_DIR$/config/locales/ru.yml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/corpu.rb" afterPath="$PROJECT_DIR$/app/models/corpu.rb" />
+>>>>>>> CreateOffers
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
@@ -226,6 +230,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="offers_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/offers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -238,6 +243,10 @@
       </file>
       <file leaf-file-name="buildings_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/buildings_controller.rb">
+=======
+      <file leaf-file-name="20160211075735_create_offers.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20160211075735_create_offers.rb">
+>>>>>>> CreateOffers
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -246,6 +255,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="offers.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/offers.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -291,10 +301,13 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> CreateOffers
       <file leaf-file-name="offer.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/offer.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
@@ -316,16 +329,27 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+=======
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+>>>>>>> CreateOffers
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="developer.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/developer.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1" column="12" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="12" />
+=======
+      <file leaf-file-name="corpu.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/corpu.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.10869565">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> CreateOffers
               <folding />
             </state>
           </provider>
@@ -343,6 +367,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/views/agents/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comissions/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comissions/index.html.erb" />
@@ -360,6 +385,44 @@
         <option value="$PROJECT_DIR$/app/controllers/developers_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/roles_controller.rb" />
+=======
+        <option value="$PROJECT_DIR$/app/views/comissions/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comissions/index.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20160207164945_create_queue.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20160207171312_create_b_corpus.rb" />
+        <option value="$PROJECT_DIR$/app/views/b_corpus/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/b_corpus/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/b_corpus/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20160208183325_change_corpus.rb" />
+        <option value="$PROJECT_DIR$/app/views/b_corpus/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/b_corpus_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/b_corpu.rb" />
+        <option value="$PROJECT_DIR$/app/views/b_corpus/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/building.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/buildings_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/biildings.coffee" />
+        <option value="$PROJECT_DIR$/app/views/corpus/_edit_category.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/_edit_corpu.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/_dialog.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/buildings.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/corpus/create.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/destroy.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/update.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/corpus.coffee" />
+        <option value="$PROJECT_DIR$/app/controllers/corpus_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/new.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/corpus/edit.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/comissions/create.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/comissions/destroy.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/comissions/update.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/comissions/_comision.html.erb" />
+>>>>>>> CreateOffers
         <option value="$PROJECT_DIR$/app/controllers/comissions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/offers/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/offers/_checkbox.html.erb" />
@@ -368,6 +431,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/comissions.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/offers.scss" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/assets/stylesheets/public/public.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/public/custom.css.scss" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
@@ -394,6 +458,11 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/offer.rb" />
         <option value="$PROJECT_DIR$/app/models/offer_category.rb" />
+=======
+        <option value="$PROJECT_DIR$/db/migrate/20160211075735_create_offers.rb" />
+        <option value="$PROJECT_DIR$/app/models/offer.rb" />
+        <option value="$PROJECT_DIR$/app/models/corpu.rb" />
+>>>>>>> CreateOffers
       </list>
     </option>
   </component>
@@ -1403,7 +1472,11 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24248926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> CreateOffers
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20314735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1582,6 +1655,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.072463766">
@@ -1591,6 +1665,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/corpus/edit.js.erb">
+>>>>>>> CreateOffers
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018115941">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -1836,6 +1913,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018115941">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20160211075735_create_offers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/offer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/corpu.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10869565">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>

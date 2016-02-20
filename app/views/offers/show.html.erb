@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<<<<<<< HEAD
   <strong>Name:</strong>
   <%= @offer.name %>
+=======
+  <strong>Title:</strong>
+  <%= @offer.title %>
+>>>>>>> CreateOffers
 </p>
 
 <p>
@@ -16,6 +21,7 @@
 </p>
 
 <p>
+<<<<<<< HEAD
   <strong>End date:</strong>
   <%= @offer.end_date %>
 </p>
@@ -25,6 +31,15 @@
   <%= @offer.user.name %>
   <%= @offer.user.role.description %>
 
+=======
+  <strong>And date:</strong>
+  <%= @offer.and_date %>
+</p>
+
+<p>
+  <strong>Corpus:</strong>
+  <%= @offer.corpus %>
+>>>>>>> CreateOffers
 </p>
 
 <%= link_to 'Edit', edit_offer_path(@offer) %> |

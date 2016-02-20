@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   name: MyString
   text: MyText
   start_date: 2016-02-13
@@ -13,3 +14,17 @@ two:
   start_date: 2016-02-13
   end_date: 2016-02-13
   created_by: 
+=======
+  title: MyString
+  text: MyText
+  start_date: 2016-02-11
+  and_date: 2016-02-11
+  corpus: 
+
+two:
+  title: MyString
+  text: MyText
+  start_date: 2016-02-11
+  and_date: 2016-02-11
+  corpus: 
+>>>>>>> CreateOffers

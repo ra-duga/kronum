@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @offer.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @offer.text %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @offer.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @offer.end_date %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @offer.user.name %>
+  <%= @offer.user.role.description %>
+
+</p>
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

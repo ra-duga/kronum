@@ -1,0 +1,27 @@
+<% @offers.each do |offer| %>
+     <article class="offer_card col-md-12">
+       <div class="content col-md-8">
+         <h1><%= offer.name %></h1>
+         <%= raw(offer.text) %>
+       </div>
+       <div class="descr col-md-4 sidebar">
+         <% Developer.by_offer(offer.id).each do |developer| %>
+             <%= image_tag developer.avatar.url, width: 50  %>
+             <ul>
+               <% developer.buildings.each do |building| %>
+                   <li><i><%= building.name%></i></li>
+                   <ul>
+                     <% building.corpus.each do |corpu| %>
+                         <li><%=corpu.name%> - <%=get_quarter(corpu.end_date_build)%></li>
+                     <%end%>
+                   </ul>
+               <%end%>
+             </ul>
+         <% end %>
+         <span class="date"> с <strong><%= l offer.start_date, format: :long %></strong> по <strong><%= l offer.end_date, format: :long %></strong></span>
+         <i>дата добавления <%= l offer.created_at, format: :short %></i>
+       </div>
+     </article>
+<% end %>
+
+

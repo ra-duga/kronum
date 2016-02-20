@@ -1,0 +1,7 @@
+<% @corpus.each do |corpu| %>
+<div>
+  <%= check_box_tag "offer[corpu_ids][]", corpu.id %>
+
+ <%= corpu.name%> (<%= get_quarter(corpu.end_date_build)%>)
+</div>
+<% end %>

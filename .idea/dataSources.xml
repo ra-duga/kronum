@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1333040180">
+  <component name="DataSourceManagerImpl" format="xml" hash="3102471376">
     <data-source source="LOCAL" name="Rails kronum: development" uuid="48348f86-98f7-4a7f-b2d2-f64624afb151">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -11,6 +11,14 @@
       <explain-plan-config>
         <provider>com.intellij.database.plan.ExplainPlanProvider.NullExplainPlanProvider</provider>
       </explain-plan-config>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.8.9.jar</url>
+        </library>
+      </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails kronum: test" uuid="9d8bbc94-3cd0-4a9a-8382-7ea6eb054c2e">
       <driver-ref>sqlite.xerial</driver-ref>

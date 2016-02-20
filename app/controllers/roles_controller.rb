@@ -1,6 +1,8 @@
 class RolesController < ApplicationController
   before_action :set_role, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
   add_breadcrumb "Роли пользователей", :roles_path
+
 
   # GET /roles
   # GET /roles.json
@@ -17,17 +19,20 @@ class RolesController < ApplicationController
       @assosciated_users = @role.users.map(&:name).join(", ")
     end
     add_breadcrumb @role.name, role_path
+    @title = @role.description
   end
 
   # GET /roles/new
   def new
     @role = Role.new
     add_breadcrumb "Создание", new_role_path
+
   end
 
   # GET /roles/1/edit
   def edit
     add_breadcrumb "Редактирование #{@role.name} ", edit_role_path
+    @title = @role.description
   end
 
   # POST /roles
@@ -69,7 +74,9 @@ class RolesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  def set_title
+    @title = 'Роли пользователя'
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_role

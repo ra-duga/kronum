@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kronum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'public' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Мобильная навигация</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="http://kronum.ru/static/images/logo-kronum.svg"  height="20" alt="Kronum"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <%= nav_link 'Акции', root_path %>
+            </li>
+            <li>
+              <%= nav_link 'Ипотека', buildings_path  %>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right second">
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-12">
+          <div class=" left-menu">
+            <div class="dropdown visible-lg visible-md visible-sm">
+              Акции
+              <a class="dropdown-toggle pool-right" id="dropdownFilter" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-filter"></span>
+              </a>
+              <div class="dropdown-menu" role="menu" aria-labelledby="dropdownFilter">
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Отправить</button>
+                </form>
+              </div>
+            </div>
+            <ul>
+              <li><a href="#">Все акции</a></li>
+              <li><a href="#">со скидками</a></li>
+              <li><a href="#">с рассрочками</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-10 col-sm-10 col-md-10 col-xs-12">
+
+          <%= yield %>
+
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </div>
+  </body>
+</html>

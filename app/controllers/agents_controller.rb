@@ -1,5 +1,8 @@
 class AgentsController < ApplicationController
   before_action :set_agent, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
+  add_breadcrumb 'Агенты', :agents_path
+
 
   # GET /agents
   # GET /agents.json
@@ -10,22 +13,26 @@ class AgentsController < ApplicationController
   # GET /agents/1
   # GET /agents/1.json
   def show
+    add_breadcrumb @agent.name, agent_path
+    @title = @agent.name
   end
 
   # GET /agents/new
   def new
     @agent = Agent.new
+    @title = "Создание агента"
   end
 
   # GET /agents/1/edit
   def edit
+    add_breadcrumb "Редактирование #{@agent.name}", edit_agent_path
+    @title = @agent.name
   end
 
   # POST /agents
   # POST /agents.json
   def create
     @agent = Agent.new(agent_params)
-
     respond_to do |format|
       if @agent.save
         format.html { redirect_to @agent, notice: 'Agent was successfully created.' }
@@ -59,6 +66,9 @@ class AgentsController < ApplicationController
       format.html { redirect_to agents_url, notice: 'Agent was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+  def set_title
+    @title = "Агенты"
   end
 
 

@@ -1,0 +1,28 @@
+
+
+
+    <% @offers.each do |offer| %>
+        <div class="row">
+        <article class="offer_card col-md-12">
+          <h1><%= offer.name %></h1>
+          <span class="date">Акция действует с <strong><%= l offer.start_date, format: :long %></strong> по <strong><%= l offer.end_date, format: :long %></strong></span>
+
+          <%= raw(offer.text) %>
+         <% offer.corpus.each do |corpu| %>
+          <p><%=corpu.building.name %> - <%=corpu.building.name %></p>
+
+        <% end %>
+
+
+       Создано <%= l offer.created_at, format: :short %><br>
+        <td><%= link_to 'Show', offer %></td>
+        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+        </article>
+        </div>
+
+    <% end %>
+<br>
+
+<%= link_to 'New Offer', new_offer_path %>

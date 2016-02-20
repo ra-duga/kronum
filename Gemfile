@@ -34,6 +34,8 @@ gem 'cancancan', '~> 1.10'
 gem "breadcrumbs_on_rails"
 # Use Unicorn as the app server
 # gem 'unicorn'
+
+gem 'trix'
 gem 'puma'
 gem 'pg'
 gem 'unicorn'

@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  resources :offer_categories
+  get 'offers/update_corpus', as: 'update_corpus'
+
+  resources :offers
 
   devise_for :users
   scope "/admin" do
     resources :users
     resources :roles
   end
-
+  resources :main_offers
 
   resources :comissions
   resources :agents
@@ -18,7 +22,7 @@ Rails.application.routes.draw do
    # post 'login' => :create
     #delete 'logout' => :destroy
   #end
-  root 'admin#index'
+  root 'main_offers#index'
 
   get 'admin/index'
   #get 'sessions/create'

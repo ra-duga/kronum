@@ -15,8 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-//= require bootstrap-wysihtml5
 //= require bootstrap-datepicker
+//= require trix
 
 $(document).ajaxError(function(event,xhr,options,exc) {
 

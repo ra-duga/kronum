@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_title
 
   #Добавляем пункт в хлебные крошки
-  add_breadcrumb "Пользователи", :users_path
+  add_breadcrumb 'Пользователи', :users_path
 
 
   # GET /users
@@ -27,11 +28,13 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     add_breadcrumb "Создание", new_user_path
+    @title = @user.name
   end
 
   # GET /users/1/edit
   def edit
     add_breadcrumb "Редактирование #{@user.name} ", edit_user_path
+    @title = @user.name
   end
 
   # POST /users
@@ -90,6 +93,9 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+  def set_title
+    @title = 'Пользователи'
   end
 
   private
